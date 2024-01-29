@@ -111,7 +111,7 @@ namespace onlinebus.Models
                     .HasColumnName("password");
 
                 entity.Property(e => e.Pincode)
-                    .HasMaxLength(1)
+                    .HasMaxLength(10)
                     .IsUnicode(false);
 
                 entity.Property(e => e.State)

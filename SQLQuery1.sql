@@ -22,13 +22,13 @@ create table usersignup
   Email varchar(80),
   State varchar(80),
   City varchar(80),
-  Pincode varchar(6),
+  Pincode varchar(10),
   Address varchar(80),
   username varchar(80) primary key,
   password varchar(80)
 )
-drop table usersign
-insert into usersignup values('Rohithkumar','06-01-2000','7207415896','rohith@gmail.com','Telangana','Karimnagar',505001,'sainagar/karimnagar','Rohith','rohith@123')
+drop table usersignup
+insert into usersignup values('Rohithkumar','06-01-2000','7207415896','rohith@gmail.com','Telangana','Karimnagar','505001','sainagar/karimnagar','Rohith','rohith@123')
 
 create table adminlogin
 (
@@ -41,3 +41,4 @@ insert into adminlogin values('Rohithkumar','Rohith123')
 select * from BusInventory
 select * from usersignup
 select * from adminlogin
+
